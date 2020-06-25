@@ -1,0 +1,12 @@
+.menuitem {
+  padding: 2px 10px;
+  border: 1px solid black;
+  border-top: none;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+  div {
+    cursor: pointer;
+  }
+}  

@@ -1,0 +1,12 @@
+.tag {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  background-color: #666666;
+  color: white;
+  padding: 0 2px;
+  margin: 1px 1px;
+  span {
+    cursor: pointer;
+  }
+}
