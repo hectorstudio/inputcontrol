@@ -34,6 +34,10 @@
   }
   .dropDown {
     display: none;
+    width: fit-content;
+    position: absolute;
+    margin-left: 40px;
+    background-color: white;
     &:focus {
       outline: none;
     }
@@ -45,6 +49,13 @@
     }
     &.active {
       display: block;
+    }
+  }
+  .datatable {
+    width: 100%;
+    thead {
+      background-color: #555555;
+      color: white;
     }
   }
 }

@@ -3,28 +3,21 @@ import InputControl from './components/InputControl';
 import './App.css';
 
 function App() {
-  const categories = [{
-    label: 'category 1',
-    demo: [{label: 'demo11'}, {label: 'demo12'}, {label: 'demo13'}],
+  const data = [{
+    category1: 'demo11', category2: 'dem21', category3: 'demo31', category4: 'demo41',
   }, {
-    label: 'category 2',
-    demo: [{label: 'demo21'}, {label: 'demo22'}, {label: 'demo23'}],
+    category1: 'demo11', category2: 'dem22', category3: 'demo32', category4: 'demo42',
   }, {
-    label: 'category 3',
-    demo: [{label: 'demo31'}, {label: 'demo32'}, {label: 'demo33'}],
+    category1: 'demo13', category2: 'dem23', category3: 'demo33', category4: 'demo43',
   }, {
-    label: 'category 4',
-    demo: [{label: 'demo41'}, {label: 'demo42'}, {label: 'demo43'}],
-  }, {
-    label: 'category 5',
-    demo: [{label: 'demo51'}, {label: 'demo52'}, {label: 'demo53'}],
+    category1: 'demo14', category2: 'dem24', category3: 'demo34', category4: 'demo44',
   }];
   return (
     <div className="App">
       <p>
         Edit <code>src/App.js</code> and save to reload.
       </p>
-      <InputControl categories={categories} placeholder="Select a category" helper={<div>Helper Modal</div>}/>
+      <InputControl data={data} placeholder="Select a category" helper={<div>Helper Modal</div>}/>
     </div>
   );
 }
